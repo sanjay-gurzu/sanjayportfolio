@@ -18,10 +18,11 @@ body {
 nav {
   padding: 10px;
   text-transform: uppercase;
-  background-color: turquoise;
+  /* background-color: turquoise; */
   width: 100%;
   position: fixed;
   height: 40px;
+  background: transparent;
 }
 
 nav ul {
@@ -53,73 +54,47 @@ nav label {
   line-height: 1;
 }
 
-nav #menu {
+nav .menu {
   float: right;
-  line-height: 1;
+  
   margin-right: px;
-  margin-top: -13px;
+  margin-top: -50px;
   cursor: pointer;
   display: none;
 }
 
 @media (max-width: 552px) {
-  nav #menu {
+  nav .menu {
     display: block;
   }
 
   ul {
-    position: fixed;
-    width: 100%;
+    position:right;
+     width: 100%;
     height: 100%;
-    background: #234523;
+    /* background: #234523; */ 
     text-align: center;
-    top: 40px;
+  margin-top: 15px;
   }
 
-  nav ul li {
-    display: block;
-    line-height: 3;
+  nav ul .topbar {
+    display: none;
   }
-}
 
-#sidebar {
-  padding-top: 20px;
-  background-color: black;
-  color: white;
-  height: 100%;
-  position: absolute;
-  line-height: 3;
-  width: 100%;
-  display: none;
+  
 }
+#home{
+  margin-top: 0px;
+   padding:20%; 
+  background-color: rgb(73, 160, 124);
+ color: white;
+   border-radius: 5px;
+   background: url(/Assets/Images/wallhaven-9mee5k.jpg );
+ background-size:1600px 1400px;
+background-repeat: no-repeat;  
 
-#sidebar ul li {
-  display: block;
-}
 
-#sidebar ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 13px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-#sidebar a:hover {
-  background-color: white;
-  color: rgb(0, 0, 0);
-  border-radius: 10px;
-  transition-delay: 0.15s;
-}
-#cross {
-  padding-top: 7px;
-  height: 30px;
-  background-color: rgb(192, 134, 26);
-  cursor: pointer;
-}
-
-/*  
-  .navigation{
+  /* .navigation{
   display:flex;
   justify-content: center; */
 /* background-color: rgb(2, 1, 1); */
@@ -165,7 +140,7 @@ nav #menu {
   background-size:1600px 1400px;
 background-repeat: no-repeat;  
 
-}
+} 
   #about{
     padding:22%;
     background-color: rgb(192, 82, 82);
@@ -240,4 +215,4 @@ background-color: lawngreen;
     font-size: 20px;
     float: center;
 margin-top: 18px;    
-} */
+} 
