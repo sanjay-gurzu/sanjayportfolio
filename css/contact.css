@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  body {
+    overflow: hidden;
+    background-color:rgb(228, 217, 217) ;
+}
+
+/* navigation bar */
+nav {
+  padding: 0.7rem;
+  text-transform: uppercase;
+  background:transparent;
+  width: 100%;
+  position:relative;
+  height: 40px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  padding: 13px;
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(20, 19, 19);
+  color: rgb(223, 217, 217);
+  border-radius: 10px;
+  transition-delay: 0.15s;
+}
+
+/* label */
+nav label {
+    color: rgb(182, 29, 29);
+    font-size: 1rem;
+    float:left;
+    line-height: 1;
+    font-weight: bold;
+  }span{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    float: left;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+  /* menu properties */
+  nav .menu {
+    float: right;
+    line-height: 1;
+    margin-right: px;
+    margin-top: -13px;
+    cursor: pointer;
+    display: none;
+  }
+   
+  /* nav bar items adjust with change in device width */
+@media (max-width: 600px) {
+  nav .menu {
+    display: inline;
+margin-top: 2px; 
+}
+
+  nav .menu a{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  }
+  nav .topbar{
+    display: none;
+  }
+}
