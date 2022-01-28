@@ -15,7 +15,7 @@
 nav {
   padding: 0.7rem;
   text-transform: uppercase;
-  background: transparent;
+  background: blueviolet;
   width: 100%;
   position: fixed;
   height: 40px;
@@ -43,3 +43,19 @@ nav ul li a:hover {
   border-radius: 10px;
   transition-delay: 0.15s;
 }
+
+/* label */
+nav label {
+    color: white;
+    font-size: 1rem;
+    float:left;
+    line-height: 1;
+    font-weight: bold;
+  }span{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    float: left;
+    line-height: 1;
+    font-weight: bold;
+  }
+  
