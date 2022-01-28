@@ -1,14 +1,14 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    list-style-type: none;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  list-style-type: none;
+}
 
-  body {
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
 /* navigation bar */
@@ -46,16 +46,43 @@ nav ul li a:hover {
 
 /* label */
 nav label {
-    color: white;
-    font-size: 1rem;
-    float:left;
-    line-height: 1;
-    font-weight: bold;
-  }span{
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    float: left;
-    line-height: 1;
-    font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  float: left;
+  line-height: 1;
+  font-weight: bold;
+}
+span {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  float: left;
+  line-height: 1;
+  font-weight: bold;
+}
+
+/* menu properties */
+nav .menu {
+  float: right;
+  line-height: 1;
+  margin-right: px;
+  margin-top: -13px;
+  cursor: pointer;
+  display: none;
+}
+
+/* media query to change properties of navbar with change in width */
+
+@media (max-width: 600px) {
+  nav .menu {
+    display: inline;
+    margin-top: 2px;
   }
-  
+
+  nav .menu a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  nav .topbar {
+    display: none;
+  }
+}
